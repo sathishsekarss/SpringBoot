@@ -1,1 +1,1 @@
-sample text
+This repository contains concepts about spring boot.
