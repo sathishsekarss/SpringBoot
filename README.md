@@ -7,7 +7,7 @@ This repository contains concepts about spring boot.
 4. [Why spring ?](#why-Spring)
 5. [What is inversion of control ?](#Inversion-Of-Control)
 6. [What is Dependency Injection ?](#dependency-Injection)
-6. [What is Auto wiring](#Auto-Wiring)
+7. [What is Auto wiring ?](#Auto-Wiring)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -36,3 +36,5 @@ Dependency Injection (DI) is a specific implementation of IoC that provides an o
 
 ## Auto Wiring
 Autowiring is a feature in the Spring Framework that allows the Spring container to automatically inject dependencies into a bean. It simplifies the process of wiring together beans by eliminating the need for explicit setter or constructor calls. When a bean requires a dependency, Spring resolves and injects it into the bean automatically.
+
+**💡 Tips:**  Class path is src/main which holds the resource folder to store statics files and any other configuration files.
