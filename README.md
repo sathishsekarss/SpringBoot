@@ -34,7 +34,7 @@ Inversion of Control (IoC) is a design principle where the control of object cre
 
 The org.springframework.beans and org.springframework.context packages are the basis for Spring Framework’s IoC container.
 
-[Refer this link for detail overview on containers](https://docs.spring.io/spring-framework/reference/core/beans/basics.html#beans-factory-xml)
+[Refer this link for detail overview on containers](https://docs.spring.io/spring-framework/reference/core/beans/basics.html)
 
 ## Dependency Injection
 Dependency Injection (DI) is a specific implementation of IoC that provides an object's dependencies from an external source, rather than having the object create them internally. This promotes loose coupling, making code more modular, testable, and maintainable.
