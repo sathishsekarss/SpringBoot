@@ -8,6 +8,7 @@ This repository contains concepts about spring boot.
 5. [What is inversion of control ?](#Inversion-Of-Control)
 6. [What is Dependency Injection ?](#dependency-Injection)
 7. [What is Auto wiring ?](#Auto-Wiring)
+8. [What is Application context ?](#Application-context)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -31,6 +32,10 @@ Note:  Initially with Spring framework, the problem was configuring spring to wo
 ## Inversion of control
 Inversion of Control (IoC) is a design principle where the control of object creation and management is transferred from the application code to a framework or container, allowing developers to focus on business logic rather than dependency management.
 
+The org.springframework.beans and org.springframework.context packages are the basis for Spring Framework’s IoC container.
+
+[Refer this link for detail overview on containers](https://docs.spring.io/spring-framework/reference/core/beans/basics.html#beans-factory-xml)
+
 ## Dependency Injection
 Dependency Injection (DI) is a specific implementation of IoC that provides an object's dependencies from an external source, rather than having the object create them internally. This promotes loose coupling, making code more modular, testable, and maintainable.
 
@@ -38,3 +43,12 @@ Dependency Injection (DI) is a specific implementation of IoC that provides an o
 Autowiring is a feature in the Spring Framework that allows the Spring container to automatically inject dependencies into a bean. It simplifies the process of wiring together beans by eliminating the need for explicit setter or constructor calls. When a bean requires a dependency, Spring resolves and injects it into the bean automatically.
 
 **💡 Tips:**  Class path is src/main which holds the resource folder to store statics files and any other configuration files.
+
+## Application context
+ApplicationContext is an advanced IOC container in Spring. It builds on top of BeanFactory and provides additional features like:
+	1. Handles events published by beans.
+	2. Supports declarative AOP features.
+	3. Allows support for internationalization and easy access to resource bundles.
+	4. Automatic injection of dependencies based on bean types.
+	5. Provides several specialized types of ApplicationContext implementations, such as:
+	6. Loads context from an XML file located in the classpath.
