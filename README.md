@@ -9,6 +9,7 @@ This repository contains concepts about spring boot.
 6. [What is Dependency Injection ?](#dependency-Injection)
 7. [What is Auto wiring ?](#Auto-Wiring)
 8. [What is Application context ?](#Application-context)
+9. [What is @Repository annotation ?](#Repository-annotation)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -52,3 +53,15 @@ ApplicationContext is an advanced IOC container in Spring. It builds on top of B
 	4. Automatic injection of dependencies based on bean types.
 	5. Provides several specialized types of ApplicationContext implementations, such as:
 	6. Loads context from an XML file located in the classpath.
+
+##Repository-annotation
+
+@Repository in Spring Boot
+
+@Repository is a Spring stereotype annotation used on classes that handle data access (DAO layer).
+
+It marks the class as a bean so Spring can detect it during component scanning.
+
+It provides automatic exception translation: converts low-level persistence exceptions (like JDBC/Hibernate errors) into Spring’s DataAccessException.
+
+Used typically with classes that interact with the database, such as JPA repositories, CRUD operations, or custom DAO implementations.
