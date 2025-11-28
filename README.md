@@ -10,6 +10,7 @@ This repository contains concepts about spring boot.
 7. [What is Auto wiring ?](#Auto-Wiring)
 8. [What is Application context ?](#Application-context)
 9. [What is @Repository annotation ?](#Repository-annotation)
+10. [What is @Service annotation ?](#Service-annotation)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -65,3 +66,8 @@ It marks the class as a bean so Spring can detect it during component scanning.
 It provides automatic exception translation: converts low-level persistence exceptions (like JDBC/Hibernate errors) into Spring’s DataAccessException.
 
 Used typically with classes that interact with the database, such as JPA repositories, CRUD operations, or custom DAO implementations.
+
+## Service-annotation
+
+@Service is a Spring stereotype annotation used to mark a class as a service layer bean.
+Spring automatically detects it during component scanning and registers it in the application context.
