@@ -11,6 +11,7 @@ This repository contains concepts about spring boot.
 8. [What is Application context ?](#Application-context)
 9. [What is @Repository annotation ?](#Repository-annotation)
 10. [What is @Service annotation ?](#Service-annotation)
+10. [What is Application properites ?](#Application-properties)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -71,3 +72,8 @@ Used typically with classes that interact with the database, such as JPA reposit
 
 @Service is a Spring stereotype annotation used to mark a class as a service layer bean.
 Spring automatically detects it during component scanning and registers it in the application context.
+
+## Application-properties
+Application properties in spring stores all the configuration related to the spring application.  Such as database connection string, static variables, location of files etc.
+
+Application properties file can be in .yaml file, .properties file or even .xml file.
