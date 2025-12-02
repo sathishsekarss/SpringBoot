@@ -12,6 +12,7 @@ This repository contains concepts about spring boot.
 9. [What is @Repository annotation ?](#Repository-annotation)
 10. [What is @Service annotation ?](#Service-annotation)
 10. [What is Application properites ?](#Application-properties)
+11. [What is JDBC Template ?](#JDBC-Template)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -77,3 +78,6 @@ Spring automatically detects it during component scanning and registers it in th
 Application properties in spring stores all the configuration related to the spring application.  Such as database connection string, static variables, location of files etc.
 
 Application properties file can be in .yaml file, .properties file or even .xml file.
+
+## JDBC-Template
+JDBC Template is used to read write in Database.  We have to pass the query to the methods to create/modify the database.
