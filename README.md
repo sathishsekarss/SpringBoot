@@ -13,6 +13,7 @@ This repository contains concepts about spring boot.
 10. [What is @Service annotation ?](#Service-annotation)
 10. [What is Application properites ?](#Application-properties)
 11. [What is JDBC Template ?](#JDBC-Template)
+12. [Describe the flow of HTTPS requests through the Spring Boot application.](#flow-HTTP-Request)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -81,3 +82,12 @@ Application properties file can be in .yaml file, .properties file or even .xml 
 
 ## JDBC-Template
 JDBC Template is used to read write in Database.  We have to pass the query to the methods to create/modify the database.
+
+
+## flow-HTTP-Request
+
+First client makes an HTTP request ( GET, POST, PUT, DELETE ) to the browser.
+After that the request will go to the controller, where all the requests will be mapped and handled.
+After this in Service layer, all the business logic will be performed. It performs the business logic on the data that is mapped to JPA (Java Persistence API) using model classes.
+In repository layer, all the CRUD operations are being done for the REST APIs .
+A JSP page is returned to the end users if no errors are there.
