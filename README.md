@@ -91,3 +91,4 @@ After that the request will go to the controller, where all the requests will be
 After this in Service layer, all the business logic will be performed. It performs the business logic on the data that is mapped to JPA (Java Persistence API) using model classes.
 In repository layer, all the CRUD operations are being done for the REST APIs .
 A JSP page is returned to the end users if no errors are there.
+If there is no error, the response is returned.
