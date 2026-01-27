@@ -14,6 +14,7 @@ This repository contains concepts about spring boot.
 10. [What is Application properites ?](#Application-properties)
 11. [What is JDBC Template ?](#JDBC-Template)
 12. [Describe the flow of HTTPS requests through the Spring Boot application.](#flow-HTTP-Request)
+13. [Types of configurations in Spring Boot ?](#Types-of-configurations-in-Spring-Boot)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -92,3 +93,9 @@ After this in Service layer, all the business logic will be performed. It perfor
 In repository layer, all the CRUD operations are being done for the REST APIs .
 A JSP page is returned to the end users if no errors are there.
 If there is no error, the response is returned.
+
+## Types-of-configurations-in-Spring-Boot
+There are three types of configurations in Spring Boot:
+1.  Annotation-based configuration
+2.  XML-based configuration
+3.  Java-based configuration
