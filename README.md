@@ -7,14 +7,15 @@ This repository contains concepts about spring boot.
 4. [Why spring ?](#why-Spring)
 5. [What is inversion of control ?](#Inversion-Of-Control)
 6. [What is Dependency Injection ?](#dependency-Injection)
-7. [What is Auto wiring ?](#Auto-Wiring)
-8. [What is Application context ?](#Application-context)
-9. [What is @Repository annotation ?](#Repository-annotation)
-10. [What is @Service annotation ?](#Service-annotation)
-10. [What is Application properites ?](#Application-properties)
-11. [What is JDBC Template ?](#JDBC-Template)
-12. [Describe the flow of HTTPS requests through the Spring Boot application.](#flow-HTTP-Request)
-13. [Types of configurations in Spring Boot ?](#Types-of-configurations-in-Spring-Boot)
+7. [Types of dependency Injection?](#types-of-dependency-Injection)
+8. [What is Auto wiring ?](#Auto-Wiring)
+9. [What is Application context ?](#Application-context)
+10. [What is @Repository annotation ?](#Repository-annotation)
+11. [What is @Service annotation ?](#Service-annotation)
+12. [What is Application properites ?](#Application-properties)
+13. [What is JDBC Template ?](#JDBC-Template)
+14. [Describe the flow of HTTPS requests through the Spring Boot application.](#flow-HTTP-Request)
+15. [Types of configurations in Spring Boot ?](#Types-of-configurations-in-Spring-Boot)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -44,6 +45,11 @@ The org.springframework.beans and org.springframework.context packages are the b
 
 ## Dependency Injection
 Dependency Injection (DI) is a specific implementation of IoC that provides an object's dependencies from an external source, rather than having the object create them internally. This promotes loose coupling, making code more modular, testable, and maintainable.
+
+## types-of-Dependency-Injection
+Types of Dependency Injection are:
+1.  Constructor-based Dependency Injection
+2.  Setter-based Dependency Injection
 
 ## Auto Wiring
 Autowiring is a feature in the Spring Framework that allows the Spring container to automatically inject dependencies into a bean. It simplifies the process of wiring together beans by eliminating the need for explicit setter or constructor calls. When a bean requires a dependency, Spring resolves and injects it into the bean automatically.
