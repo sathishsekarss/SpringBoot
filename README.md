@@ -46,6 +46,8 @@ The org.springframework.beans and org.springframework.context packages are the b
 ## Dependency Injection
 Dependency Injection (DI) is a specific implementation of IoC that provides an object's dependencies from an external source, rather than having the object create them internally. This promotes loose coupling, making code more modular, testable, and maintainable.
 
+**💡 Tips:**  Providing too many constructor injection is not a good practice.  Only the mandatory ones should be provided in the constructor.  We can use the setter injection for the optional dependencies.  This will make the code more readable and maintainable.
+
 ## types-of-Dependency-Injection
 Types of Dependency Injection are:
 1.  Constructor-based Dependency Injection
