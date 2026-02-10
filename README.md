@@ -4,18 +4,19 @@ This repository contains concepts about spring boot.
 1. [What is spring framework](#Spring-Framework)
 2. [What is spring boot ?](#Spring-boot)
 3. [What are the core features of Spring ?](#Core-features-of-Spring)
-4. [Why spring ?](#why-Spring)
-5. [What is inversion of control ?](#Inversion-Of-Control)
-6. [What is Dependency Injection ?](#dependency-Injection)
-7. [Types of dependency Injection?](#types-of-dependency-Injection)
-8. [What is Auto wiring ?](#Auto-Wiring)
-9. [What is Application context ?](#Application-context)
-10. [What is @Repository annotation ?](#Repository-annotation)
-11. [What is @Service annotation ?](#Service-annotation)
-12. [What is Application properites ?](#Application-properties)
-13. [What is JDBC Template ?](#JDBC-Template)
-14. [Describe the flow of HTTPS requests through the Spring Boot application.](#flow-HTTP-Request)
-15. [Types of configurations in Spring Boot ?](#Types-of-configurations-in-Spring-Boot)
+4. [what is annotation ?](#what-is-annotation)
+5. [Why spring ?](#why-Spring)
+6. [What is inversion of control ?](#Inversion-Of-Control)
+7. [What is Dependency Injection ?](#dependency-Injection)
+8. [Types of dependency Injection?](#types-of-dependency-Injection)
+9. [What is Auto wiring ?](#Auto-Wiring)
+10. [What is Application context ?](#Application-context)
+11. [What is @Repository annotation ?](#Repository-annotation)
+12. [What is @Service annotation ?](#Service-annotation)
+13. [What is Application properites ?](#Application-properties)
+14. [What is JDBC Template ?](#JDBC-Template)
+15. [Describe the flow of HTTPS requests through the Spring Boot application.](#flow-HTTP-Request)
+16. [Types of configurations in Spring Boot ?](#Types-of-configurations-in-Spring-Boot)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -30,6 +31,11 @@ Note:  Initially with Spring framework, the problem was configuring spring to wo
 	1. POJO - Plain old Java Objects
 	2. Dependency Injection
 	3. Aspect Oriented programming
+
+## what is annotation
+Annotations in spring framework are used to provide metadata about the code.  It is a form of syntactic sugar that allows developers to write less code and make it more readable.  Annotations are used to configure the spring application and to define the beans in the application context.
+
+eg. @Component, @Service, @Repository, @Controller, @Autowired, @Qualifier etc.
 
 ## why spring
 	1.  Lightweight and modular
