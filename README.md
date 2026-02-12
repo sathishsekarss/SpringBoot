@@ -17,6 +17,7 @@ This repository contains concepts about spring boot.
 14. [What is JDBC Template ?](#JDBC-Template)
 15. [Describe the flow of HTTPS requests through the Spring Boot application.](#flow-HTTP-Request)
 16. [Types of configurations in Spring Boot ?](#Types-of-configurations-in-Spring-Boot)
+17. [Spring batch](#Spring-batch)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -113,3 +114,6 @@ There are three types of configurations in Spring Boot:
 1.  Annotation-based configuration
 2.  XML-based configuration
 3.  Java-based configuration
+
+## Spring-batch
+Spring Batch is a lightweight, comprehensive framework designed for building robust batch processing applications. It provides reusable functions that are essential in processing large volumes of data, including logging/tracing, transaction management, job processing statistics, job restart, skip, and resource management. Spring Batch is built on top of the Spring Framework and integrates seamlessly with other Spring components, making it an ideal choice for developers looking to implement batch processing in their applications.
