@@ -2,7 +2,7 @@
 1. [Repository vs Service vs Controller](#Repository-vs-Service-vs-Controller)
 2. [@suppressWarnings annotation](#suppressWarnings-annotation)
 3. [@Data annotation](#Data-annotation)
-
+4. [Lombok](#Lombok)
 
 ## Repository vs Service vs Controller
 In Spring Framework, @Repository, @Service, and @Controller are three important annotations that serve different purposes in the application architecture.
@@ -17,3 +17,10 @@ The @SuppressWarnings annotation in Java is used to suppress compiler warnings f
 
 ## @Data annotation
 The @Data annotation is a convenient shortcut provided by the Lombok library in Java. It is used to automatically generate boilerplate code for classes, such as getters, setters, toString(), equals(), and hashCode() methods. When you annotate a class with @Data, Lombok will generate these methods at compile time, reducing the amount of code you need to write and improving readability. This annotation is particularly useful for data transfer objects (DTOs) or any class that primarily holds data without complex behavior. By using @Data, developers can focus on the core logic of their application while letting Lombok handle the repetitive code generation.
+
+## Lombok
+Lombok is a Java library that helps reduce boilerplate code by providing annotations that automatically generate common methods and constructors. It is widely used in Java projects to improve code readability and maintainability. Some of the key features of Lombok include:
+1. @Getter and @Setter: Automatically generate getter and setter methods for class fields.
+2. @ToString: Generates a toString() method that includes all class fields.
+3. @EqualsAndHashCode: Generates equals() and hashCode() methods based on class
+fields. Etc.
