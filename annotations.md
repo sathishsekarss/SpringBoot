@@ -3,6 +3,7 @@
 2. [@suppressWarnings annotation](#suppressWarnings-annotation)
 3. [@Data annotation](#Data-annotation)
 4. [Lombok](#Lombok)
+5. [@Autowired annotation](#Autowired-annotation)
 
 ## Repository vs Service vs Controller
 In Spring Framework, @Repository, @Service, and @Controller are three important annotations that serve different purposes in the application architecture.
@@ -24,3 +25,6 @@ Lombok is a Java library that helps reduce boilerplate code by providing annotat
 2. @ToString: Generates a toString() method that includes all class fields.
 3. @EqualsAndHashCode: Generates equals() and hashCode() methods based on class
 fields. Etc.
+
+## @Autowired annotation
+The @Autowired annotation in Spring Framework is used for automatic dependency injection. It allows Spring to automatically resolve and inject the required dependencies into a class. When you annotate a field, constructor, or setter method with @Autowired, Spring will look for a matching bean in the application context and inject it into the annotated element. This helps to decouple the components of an application and promotes loose coupling. The @Autowired annotation can be used with various types of dependencies, such as services, repositories, and other beans defined in the Spring context. It simplifies the process of managing dependencies and promotes a more modular and maintainable codebase.
