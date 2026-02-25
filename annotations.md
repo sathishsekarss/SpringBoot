@@ -4,6 +4,7 @@
 3. [@Data annotation](#Data-annotation)
 4. [Lombok](#Lombok)
 5. [@Autowired annotation](#Autowired-annotation)
+6. [@Builder annotation](#builder-annotation)
 
 ## Repository vs Service vs Controller
 In Spring Framework, @Repository, @Service, and @Controller are three important annotations that serve different purposes in the application architecture.
@@ -28,3 +29,6 @@ fields. Etc.
 
 ## @Autowired annotation
 The @Autowired annotation in Spring Framework is used for automatic dependency injection. It allows Spring to automatically resolve and inject the required dependencies into a class. When you annotate a field, constructor, or setter method with @Autowired, Spring will look for a matching bean in the application context and inject it into the annotated element. This helps to decouple the components of an application and promotes loose coupling. The @Autowired annotation can be used with various types of dependencies, such as services, repositories, and other beans defined in the Spring context. It simplifies the process of managing dependencies and promotes a more modular and maintainable codebase.
+
+## @Builder annotation
+The @Builder annotation is a feature provided by the Lombok library in Java. It is used to implement the Builder design pattern, which allows for more flexible and readable object creation. When you annotate a class with @Builder, Lombok generates a builder class that provides a fluent API for constructing instances of the annotated class. This means you can create objects in a more readable and maintainable way, especially when dealing with classes that have many fields or optional parameters. The builder pattern helps to avoid issues with constructors that have too many parameters and improves code clarity by allowing you to specify only the fields you want to set while creating an object. For example, instead of using a constructor with multiple parameters, you can use the builder to set only the desired fields in a more readable manner.
