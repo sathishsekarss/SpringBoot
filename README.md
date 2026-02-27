@@ -19,6 +19,7 @@ This repository contains concepts about spring boot.
 16. [Types of configurations in Spring Boot ?](#Types-of-configurations-in-Spring-Boot)
 17. [Spring batch](#Spring-batch)
 18. [AOP in Spring](#AOP-in-Spring)
+19. [Criteria in mongoDB](#Criteria-in-mongoDB)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -121,3 +122,6 @@ Spring Batch is a lightweight, comprehensive framework designed for building rob
 
 ## AOP-in-Spring
 AOP (Aspect-Oriented Programming) in Spring is a programming paradigm that allows developers to separate cross-cutting concerns (like logging, security, transaction management) from the main business logic. It enables modularization of concerns that cut across multiple classes or methods, improving code maintainability and readability. Spring AOP provides a way to define aspects, which are reusable modules that can be applied to various points in the application, known as join points, without modifying the actual code of the business logic. This promotes a cleaner and more modular design in Spring applications.
+
+## Criteria-in-mongoDB
+Criteria in MongoDB allows to chain together multiple conditions to create complex queries. It provides a fluent API for building queries in a more readable and maintainable way. With Criteria, you can specify various conditions such as equality, inequality, range queries, and logical operators (AND, OR) to filter documents in a MongoDB collection. This makes it easier to construct queries that match specific criteria without having to write raw query strings, improving code clarity and reducing the likelihood of errors in query construction.
