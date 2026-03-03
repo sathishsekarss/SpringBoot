@@ -5,6 +5,7 @@
 4. [Lombok](#Lombok)
 5. [@Autowired annotation](#Autowired-annotation)
 6. [@Builder annotation](#builder-annotation)
+7. [@MockMVC annotation](#MockMVC-annotation)
 
 ## Repository vs Service vs Controller
 In Spring Framework, @Repository, @Service, and @Controller are three important annotations that serve different purposes in the application architecture.
@@ -32,3 +33,6 @@ The @Autowired annotation in Spring Framework is used for automatic dependency i
 
 ## @Builder annotation
 The @Builder annotation is a feature provided by the Lombok library in Java. It is used to implement the Builder design pattern, which allows for more flexible and readable object creation. When you annotate a class with @Builder, Lombok generates a builder class that provides a fluent API for constructing instances of the annotated class. This means you can create objects in a more readable and maintainable way, especially when dealing with classes that have many fields or optional parameters. The builder pattern helps to avoid issues with constructors that have too many parameters and improves code clarity by allowing you to specify only the fields you want to set while creating an object. For example, instead of using a constructor with multiple parameters, you can use the builder to set only the desired fields in a more readable manner.
+
+## @MockMVC annotation
+The @MockMVC annotation is not a standard annotation in Java or Spring Framework. However, it is likely referring to the MockMvc class in Spring's testing framework. MockMvc is used for testing Spring MVC applications by simulating HTTP requests and responses without the need for a running server. It allows developers to test the behavior of controllers and their interactions with the service layer in a controlled environment. By using MockMvc, you can perform various HTTP operations (GET, POST, PUT, DELETE) and verify the expected outcomes, such as status codes, response content, and headers. This helps to ensure that your controllers are functioning correctly and that your application behaves as expected under different scenarios.
