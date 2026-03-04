@@ -6,6 +6,7 @@
 5. [@Autowired annotation](#Autowired-annotation)
 6. [@Builder annotation](#builder-annotation)
 7. [@MockMVC annotation](#MockMVC-annotation)
+8. [@Mapping annotation](#Mapping-annotation)
 
 ## Repository vs Service vs Controller
 In Spring Framework, @Repository, @Service, and @Controller are three important annotations that serve different purposes in the application architecture.
@@ -36,3 +37,6 @@ The @Builder annotation is a feature provided by the Lombok library in Java. It 
 
 ## @MockMVC annotation
 The @MockMVC annotation is not a standard annotation in Java or Spring Framework. However, it is likely referring to the MockMvc class in Spring's testing framework. MockMvc is used for testing Spring MVC applications by simulating HTTP requests and responses without the need for a running server. It allows developers to test the behavior of controllers and their interactions with the service layer in a controlled environment. By using MockMvc, you can perform various HTTP operations (GET, POST, PUT, DELETE) and verify the expected outcomes, such as status codes, response content, and headers. This helps to ensure that your controllers are functioning correctly and that your application behaves as expected under different scenarios.
+
+## @Mapping annotation
+Mapping annotation to map data field from mapper class to the model class.  It is used to map the fields of one class to another class.  It is used in the service layer to map the data from the repository layer to the model class.  It is also used in the controller layer to map the data from the service layer to the model class.  It is used to map the data from the model class to the DTO (Data Transfer Object) class.  It is used to map the data from the DTO class to the model class.  It is used to map the data from the model class to the entity class.  It is used to map the data from the entity class to the model class.
