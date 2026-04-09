@@ -21,6 +21,7 @@ This repository contains concepts about spring boot.
 18. [AOP in Spring](#AOP-in-Spring)
 19. [Criteria in mongoDB](#Criteria-in-mongoDB)
 20. [Exclude a field while fetching from mongo db](#exclude-field-during-fetching)
+21. [Excludes in POM XML file](#Excludes-in-POM-XML-file)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -134,3 +135,22 @@ To exclude a field while fetching from the DB, use the following method
 query.fields().exclude("Field name").
 
 the query object is from query builder from MONGO DB.
+
+## Excludes-in-POM-XML-file
+When you add a dependency, Maven automatically pulls its transitive dependencies (dependencies of that dependency).When you add a dependency, Maven automatically pulls its transitive dependencies (dependencies of that dependency).  Sometimes, they cause version conflicts, vulnerabilities or unnecessary size.  So with the help of exclude we remove them.
+
+eg.
+```
+<dependency>
+    <groupId>group.id</groupId>
+    <artifactId>artifact-id</artifactId>
+    <version>1.0</version>
+
+    <exclusions>
+        <exclusion>
+            <groupId>unwanted.group</groupId>
+            <artifactId>unwanted-artifact</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+```
