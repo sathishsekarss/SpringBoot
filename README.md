@@ -1,5 +1,7 @@
 This repository contains concepts about spring boot.
 
+## Top
+
 ## Table of contents
 1. [What is spring framework](#Spring-Framework)
 2. [What is spring boot ?](#Spring-boot)
@@ -27,25 +29,31 @@ This repository contains concepts about spring boot.
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
 web, database, security, and transaction management.
 
+[Go to Top](#Top)
+
 ## Spring boot 
 Spring Boot is an extension of the Spring framework that simplifies the process of building Spring-based applications. It offers a set of conventions and defaults that help developers get started quickly without extensive configuration.
 
 Note:  Initially with Spring framework, the problem was configuring spring to work.  It had lot of configurations file to even print a simple message.  So, the spring team addressed this issue and came up with spring boot concept.  From the name spring boot, boot implies that boot the spring framework application.  In simple words it gives a template to get started with Spring framework application by default.
+[Go to Top](#Top)
 
 ## core features of Spring
 	1. POJO - Plain old Java Objects
 	2. Dependency Injection
 	3. Aspect Oriented programming
+[Go to Top](#Top)
 
 ## what is annotation
 Annotations in spring framework are used to provide metadata about the code.  It is a form of syntactic sugar that allows developers to write less code and make it more readable.  Annotations are used to configure the spring application and to define the beans in the application context.
 
 eg. @Component, @Service, @Repository, @Controller, @Autowired, @Qualifier etc.
+[Go to Top](#Top)
 
 ## why spring
 	1.  Lightweight and modular
 	2.  Clean and maintainable code
 	3.  Supports a wide range of technologies.
+[Go to Top](#Top)
 
 ## Inversion of control
 Inversion of Control (IoC) is a design principle where the control of object creation and management is transferred from the application code to a framework or container, allowing developers to focus on business logic rather than dependency management.
@@ -53,21 +61,25 @@ Inversion of Control (IoC) is a design principle where the control of object cre
 The org.springframework.beans and org.springframework.context packages are the basis for Spring Framework’s IoC container.
 
 [Refer this link for detail overview on containers](https://docs.spring.io/spring-framework/reference/core/beans/basics.html)
+[Go to Top](#Top)
 
 ## Dependency Injection
 Dependency Injection (DI) is a specific implementation of IoC that provides an object's dependencies from an external source, rather than having the object create them internally. This promotes loose coupling, making code more modular, testable, and maintainable.
 
 **💡 Tips:**  Providing too many constructor injection is not a good practice.  Only the mandatory ones should be provided in the constructor.  We can use the setter injection for the optional dependencies.  This will make the code more readable and maintainable.
+[Go to Top](#Top)
 
 ## types-of-Dependency-Injection
 Types of Dependency Injection are:
 1.  Constructor-based Dependency Injection
 2.  Setter-based Dependency Injection
+[Go to Top](#Top)
 
 ## Auto Wiring
 Autowiring is a feature in the Spring Framework that allows the Spring container to automatically inject dependencies into a bean. It simplifies the process of wiring together beans by eliminating the need for explicit setter or constructor calls. When a bean requires a dependency, Spring resolves and injects it into the bean automatically.
 
 **💡 Tips:**  Class path is src/main which holds the resource folder to store statics files and any other configuration files.
+[Go to Top](#Top)
 
 ## Application context
 ApplicationContext is an advanced IOC container in Spring. It builds on top of BeanFactory and provides additional features like:
@@ -77,6 +89,7 @@ ApplicationContext is an advanced IOC container in Spring. It builds on top of B
 	4. Automatic injection of dependencies based on bean types.
 	5. Provides several specialized types of ApplicationContext implementations, such as:
 	6. Loads context from an XML file located in the classpath.
+[Go to Top](#Top)
 
 ## Repository-annotation
 
@@ -89,20 +102,24 @@ It marks the class as a bean so Spring can detect it during component scanning.
 It provides automatic exception translation: converts low-level persistence exceptions (like JDBC/Hibernate errors) into Spring’s DataAccessException.
 
 Used typically with classes that interact with the database, such as JPA repositories, CRUD operations, or custom DAO implementations.
+[Go to Top](#Top)
 
 ## Service-annotation
 
 @Service is a Spring stereotype annotation used to mark a class as a service layer bean.
 Spring automatically detects it during component scanning and registers it in the application context.
+[Go to Top](#Top)
 
 ## Application-properties
 Application properties in spring stores all the configuration related to the spring application.  Such as database connection string, static variables, location of files etc.
 
 Application properties file can be in .yaml file, .properties file or even .xml file.
+[Go to Top](#Top)
 
 ## JDBC-Template
 JDBC Template is used to read write in Database.  We have to pass the query to the methods to create/modify the database.
 
+[Go to Top](#Top)
 
 ## flow-HTTP-Request
 
@@ -112,21 +129,26 @@ After this in Service layer, all the business logic will be performed. It perfor
 In repository layer, all the CRUD operations are being done for the REST APIs .
 A JSP page is returned to the end users if no errors are there.
 If there is no error, the response is returned.
+[Go to Top](#Top)
 
 ## Types-of-configurations-in-Spring-Boot
 There are three types of configurations in Spring Boot:
 1.  Annotation-based configuration
 2.  XML-based configuration
 3.  Java-based configuration
+[Go to Top](#Top)
 
 ## Spring-batch
 Spring Batch is a lightweight, comprehensive framework designed for building robust batch processing applications. It provides reusable functions that are essential in processing large volumes of data, including logging/tracing, transaction management, job processing statistics, job restart, skip, and resource management. Spring Batch is built on top of the Spring Framework and integrates seamlessly with other Spring components, making it an ideal choice for developers looking to implement batch processing in their applications.
+[Go to Top](#Top)
 
 ## AOP-in-Spring
 AOP (Aspect-Oriented Programming) in Spring is a programming paradigm that allows developers to separate cross-cutting concerns (like logging, security, transaction management) from the main business logic. It enables modularization of concerns that cut across multiple classes or methods, improving code maintainability and readability. Spring AOP provides a way to define aspects, which are reusable modules that can be applied to various points in the application, known as join points, without modifying the actual code of the business logic. This promotes a cleaner and more modular design in Spring applications.
+[Go to Top](#Top)
 
 ## Criteria-in-mongoDB
 Criteria in MongoDB allows to chain together multiple conditions to create complex queries. It provides a fluent API for building queries in a more readable and maintainable way. With Criteria, you can specify various conditions such as equality, inequality, range queries, and logical operators (AND, OR) to filter documents in a MongoDB collection. This makes it easier to construct queries that match specific criteria without having to write raw query strings, improving code clarity and reducing the likelihood of errors in query construction.
+[Go to Top](#Top)
 
 ## exclude-field-during-fetching
 
@@ -135,6 +157,7 @@ To exclude a field while fetching from the DB, use the following method
 query.fields().exclude("Field name").
 
 the query object is from query builder from MONGO DB.
+[Go to Top](#Top)
 
 ## Excludes-in-POM-XML-file
 When you add a dependency, Maven automatically pulls its transitive dependencies (dependencies of that dependency).When you add a dependency, Maven automatically pulls its transitive dependencies (dependencies of that dependency).  Sometimes, they cause version conflicts, vulnerabilities or unnecessary size.  So with the help of exclude we remove them.
@@ -154,3 +177,4 @@ eg.
     </exclusions>
 </dependency>
 ```
+[Go to Top](#Top)
