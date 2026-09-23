@@ -1,13 +1,14 @@
 <a id="Top"></a>
 ## Table of contents
 1. [Repository vs Service vs Controller](#Repository-vs-Service-vs-Controller)
-2. [@suppressWarnings annotation](#suppressWarnings-annotation)
-3. [@Data annotation](#Data-annotation)
-4. [Lombok](#Lombok)
-5. [@Autowired annotation](#Autowired-annotation)
-6. [@Builder annotation](#builder-annotation)
-7. [@MockMVC annotation](#MockMVC-annotation)
-8. [@Mapping annotation](#Mapping-annotation)
+1. [@suppressWarnings annotation](#suppressWarnings-annotation)
+1. [@Data annotation](#Data-annotation)
+1. [Lombok](#Lombok)
+1. [@Autowired annotation](#Autowired-annotation)
+1. [@Builder annotation](#builder-annotation)
+1. [@MockMVC annotation](#MockMVC-annotation)
+1. [@Mapping annotation](#Mapping-annotation)
+1. [@noArgsConstructor and @allArgsConstructor annotation](#no-args-and-all-args-constructor)
 
 ## Repository vs Service vs Controller
 In Spring Framework, @Repository, @Service, and @Controller are three important annotations that serve different purposes in the application architecture.
@@ -48,4 +49,10 @@ The @MockMVC annotation is not a standard annotation in Java or Spring Framework
 
 ## @Mapping annotation
 Mapping annotation to map data field from mapper class to the model class.  It is used to map the fields of one class to another class.  It is used in the service layer to map the data from the repository layer to the model class.  It is also used in the controller layer to map the data from the service layer to the model class.  It is used to map the data from the model class to the DTO (Data Transfer Object) class.  It is used to map the data from the DTO class to the model class.  It is used to map the data from the model class to the entity class.  It is used to map the data from the entity class to the model class.
+[Go to Top](#Top)
+
+## no-args-and-all-args-constructor
+A no-arg constructor (short for no-argument constructor) is a constructor in Java that does not accept any parameters. Its primary purpose is to initialize an object with default values or execute basic setup code when an object is instantiated.
+
+An all-args constructor (all-arguments constructor) in Java is a constructor that accepts exactly one parameter for every field (attribute) defined in the class, allowing you to initialize all object properties at the moment of creation.
 [Go to Top](#Top)
