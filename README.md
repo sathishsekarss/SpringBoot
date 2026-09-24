@@ -25,6 +25,7 @@ This repository contains concepts about spring boot.
 1. [Exclude a field while fetching from mongo db](#exclude-field-during-fetching)
 1. [Excludes in POM XML file](#Excludes-in-POM-XML-file)
 1. [Open ssl and keytool](#open-ssl-and-keytool)
+1. [Target folder in Sprint boot application](#target-folder-in-spring-boot)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -183,3 +184,6 @@ eg.
 ## open-ssl-and-keytool
 Keytool and OpenSSL are both popular command-line utilities used for cryptography, managing security keys, and handling SSL/TLS certificates.
 [Go to Top](#Top)
+
+## target-folder-in-spring-boot
+The target folder in spring boot application contains, the build files which are actually converted to byte code.  If we delete the folder and put the build again, the target folder will again be created.
