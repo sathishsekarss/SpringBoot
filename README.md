@@ -26,6 +26,7 @@ This repository contains concepts about spring boot.
 1. [Excludes in POM XML file](#Excludes-in-POM-XML-file)
 1. [Open ssl and keytool](#open-ssl-and-keytool)
 1. [Target folder in Sprint boot application](#target-folder-in-spring-boot)
+1. [Difference between WAR and JAR files](#difference-between-war-and-jar-files)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -187,3 +188,6 @@ Keytool and OpenSSL are both popular command-line utilities used for cryptograph
 
 ## target-folder-in-spring-boot
 The target folder in spring boot application contains, the build files which are actually converted to byte code.  If we delete the folder and put the build again, the target folder will again be created.
+
+## difference-between-war-and-jar-files
+The fundamental difference is that JAR (Java Archive) is used to package standalone Java applications or reusable libraries, whereas WAR (Web Application Archive) is specifically used to package web applications intended to run on a web server or servlet container.
