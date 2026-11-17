@@ -27,6 +27,7 @@ This repository contains concepts about spring boot.
 1. [Open ssl and keytool](#open-ssl-and-keytool)
 1. [Target folder in Sprint boot application](#target-folder-in-spring-boot)
 1. [Difference between WAR and JAR files](#difference-between-war-and-jar-files)
+1. [Thymeleaf in spring-boot](#thymeleaf-in-springboot)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -191,3 +192,6 @@ The target folder in spring boot application contains, the build files which are
 
 ## difference-between-war-and-jar-files
 The fundamental difference is that JAR (Java Archive) is used to package standalone Java applications or reusable libraries, whereas WAR (Web Application Archive) is specifically used to package web applications intended to run on a web server or servlet container.
+
+## thymeleaf-in-springboot
+Thymeleaf is a modern server-side Java template engine commonly used in Spring Boot to build dynamic web pages. It processes HTML files on the server and injects data from your Java backend before sending the final HTML to the user's browser.  It is used to html template for mail contents.
