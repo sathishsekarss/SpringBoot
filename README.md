@@ -28,6 +28,7 @@ This repository contains concepts about spring boot.
 1. [Target folder in Sprint boot application](#target-folder-in-spring-boot)
 1. [Difference between WAR and JAR files](#difference-between-war-and-jar-files)
 1. [Thymeleaf in spring-boot](#thymeleaf-in-springboot)
+1. [Circuit breakers in spring boot](#circuit-breakers-in-spring-boot)
 
 ## Spring Framework
 Spring is a comprehensive Java framework for building robust, enterprise grade applications. Spring provides a complete solution for all application needs, including 
@@ -195,3 +196,11 @@ The fundamental difference is that JAR (Java Archive) is used to package standal
 
 ## thymeleaf-in-springboot
 Thymeleaf is a modern server-side Java template engine commonly used in Spring Boot to build dynamic web pages. It processes HTML files on the server and injects data from your Java backend before sending the final HTML to the user's browser.  It is used to html template for mail contents.
+
+## circuit-breakers-in-spring-boot
+In Spring Boot, a Circuit Breaker is a fault-tolerance design pattern implemented primarily using Resilience4j to prevent cascading failures when a downstream service is slow or unavailable.
+
+There are three states in circuit breaker:
+1. closed:  Normal operation where all requests pass through to the downstream service while the circuit breaker tracks failure rates.
+1. open: Triggered when the failure or slow-call rate exceeds a set threshold. All incoming requests fail fast and immediately execute a fallback method without calling the struggling service.
+1. half-open:  Triggered when the failure or slow-call rate exceeds a set threshold. All incoming requests fail fast and immediately execute a fallback method without calling the struggling service.
